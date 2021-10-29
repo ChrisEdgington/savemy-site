@@ -9,6 +9,10 @@
         xfbml            : true,
         version          : 'v12.0'
       });
+      console.log('index.html calling FB.getLoginStatus')
+      window.FB.getLoginStatus( (response) => {
+        console.log('index.html FB.getLoginStatus returned ...', response)
+      })
     };
   </script>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk/debug.js"></script>  
@@ -17,9 +21,9 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index.47656ddd.js"></script>
-    <link rel="modulepreload" href="/assets/vendor.908c225b.js">
-    <link rel="stylesheet" href="/assets/index.14d2721a.css">
+    <script type="module" crossorigin src="/assets/index.4707e34b.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.897297c6.js">
+    <link rel="stylesheet" href="/assets/index.7695a95c.css">
   </head>
   <body>
     <div id="root"></div>
